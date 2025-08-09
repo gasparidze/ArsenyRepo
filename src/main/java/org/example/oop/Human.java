@@ -29,6 +29,7 @@ public class Human {
      * 3) default (package-private) - доступен внутри пакета, если модификатор доступа отсутствует,
      * то по умолчанию модификатор доступа будет как default
      * 4) protected - доступен внутри пакета + вне пакета в классах наследниках
+     *
      */
     private String name;
     private int age;
