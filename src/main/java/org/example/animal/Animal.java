@@ -33,6 +33,9 @@ public abstract class Animal {
 
     public abstract void sayHello();
 
+    public abstract void makeSound();
+    public abstract void eat();
+
     public double getWeight() {
         return weight;
     }
@@ -55,5 +58,14 @@ public abstract class Animal {
 
     public void setNickname(String nickname) {
         this.nickname = nickname;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "weight=" + weight +
+                ", environment='" + environment + '\'' +
+                ", nickname='" + nickname + '\'' +
+                '}';
     }
 }

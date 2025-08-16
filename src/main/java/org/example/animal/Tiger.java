@@ -13,6 +13,16 @@ public class Tiger extends Animal{
         System.out.println("hello from tiger");
     }
 
+    @Override
+    public void makeSound() {
+        System.out.println("tiger makes sound");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("tiger is eating");
+    }
+
     public String getUniqueParam() {
         return uniqueParam;
     }

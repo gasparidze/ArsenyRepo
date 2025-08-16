@@ -90,16 +90,9 @@ public class Human {
     }
 
     public Human(){
-<<<<<<< HEAD
         System.out.println("hello from constructor");
     }
 
-
-=======
-        System.out.println("hello world");
-    }
-
->>>>>>> 953a73a (lesson from 09.08.25)
     /**
      * Метод - это некое поведение объекта
      * Структура метода

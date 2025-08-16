@@ -20,6 +20,16 @@ public class Monkey extends Animal{
         System.out.println("hello from monkey");
     }
 
+    @Override
+    public void makeSound() {
+        System.out.println("monkey makes sound");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("monkey is eating");
+    }
+
     public int getQuantityOfBananas() {
         return quantityOfBananas;
     }
