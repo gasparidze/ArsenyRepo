@@ -43,11 +43,7 @@ public class Human {
     }
 
     public void setBalance(int balance) {
-        if(name == "Polina"){
-            this.balance = balance;
-        } else {
-            System.out.println("нет доступа");
-        }
+        this.balance = balance;
     }
 
 
