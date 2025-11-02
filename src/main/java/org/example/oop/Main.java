@@ -24,7 +24,9 @@ public class Main {
          * arseniy - это объект/экземпляр класса Human
          *
          */
-        Human kate = new Human();
+        Human kate = new Human("kate", 18, 172, 50);
+        System.out.println("kate: " + kate);
+
         Human arseniy = new Human("Arseniy", 22, 180, 80);
 //        arseniy.name = "Arseniy";
 //        arseniy.age = 22;

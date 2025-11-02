@@ -46,7 +46,6 @@ public class Human {
         this.balance = balance;
     }
 
-
     public String getName(){
         return name;
     }
@@ -75,6 +74,12 @@ public class Human {
         this.age = age;
         this.height = height;
         this.weight = weight;
+    }
+
+
+    public Human(String name , int age) {
+        this.name = name;
+        this.age = age;
     }
 
     /**
@@ -114,5 +119,16 @@ public class Human {
 
     public int function(int x){
         return x * 2;
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", height=" + height +
+                ", weight=" + weight +
+                ", balance=" + balance +
+                '}';
     }
 }

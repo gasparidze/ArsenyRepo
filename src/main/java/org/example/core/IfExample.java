@@ -1,5 +1,6 @@
 package org.example.core;
 
+import org.example.base_syntax.Book;
 import org.example.oop.Human;
 
 public class IfExample {
@@ -95,5 +96,29 @@ public class IfExample {
             System.out.println(arrayName[j]);
             j++;
         } while (j < arrayName.length);
+
+        System.out.println("---------------------------------------");
+
+        Book[] books = new Book[3];
+        books[0] = new Book("Петров", "Пушкин");
+        books[1] = new Book("Сидоров", "Лермонтов");
+        books[2] = new Book("Фролов", "Толстой");
+
+        test(books);
+    }
+
+    /**
+     * authors - это название локальной переменной, в которой лежит переданные массив при вызове метода test
+     * String[] - это тип данных, т.е. массив String'ов
+     *
+     * books: [Петров, Пушкин], [Сидоров, Лермонтов], [Фролов, Толстой]
+     * books[0] = [Петров, Пушкин]
+     * books[1] = [Сидоров, Лермонтов]
+     * books[2] = [Фролов, Толстой]
+     */
+    public static void test(Book[] books){
+        for (int i = 0; i < books.length; i++) {
+            System.out.println(books[i].getName() + " взял книгу " + books[i].getAuthorName());
+        }
     }
 }
